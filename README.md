@@ -3,7 +3,7 @@
 <h3>ENTER YOUR NAME:keerthana</h3>
 <h3>ENTER YOUR REGISTER NO:212224220046</h3>
 <h3>EX. NO:04</h3>
-<h3>DATE:14.10.2025</h3>
+<h3>DATE:30.10.2025</h3>
 <h1> <align=center> MATRIX ADDITION WITH UNIFIED MEMORY </h3>
   Refer to the program sumMatrixGPUManaged.cu. Would removing the memsets below affect performance? If you can, check performance with nvprof or nvvp.</h3>
 
@@ -275,6 +275,7 @@ int main(int argc, char **argv)
     return (0);
 }
 ```
+
 ## Without Memset()
 ```
 %%cuda
@@ -513,13 +514,21 @@ int main(int argc, char **argv)
 }
 ```
 
+
 ## OUTPUT:
 
 With Memset()
-<img width="1552" height="162" alt="image" src="https://github.com/user-attachments/assets/6a82018a-14f9-4fd5-91ed-1c249f04b9bb" />
 
- Without Memset()
- <img width="1546" height="151" alt="image" src="https://github.com/user-attachments/assets/48e27e13-b460-44b9-88c7-6ae2c7372f1b" />
+<img width="1044" height="132" alt="image" src="https://github.com/user-attachments/assets/a2c49d78-2b2a-4f9e-8550-3cbc4f248515" />
+
+
+Without Memset()
+
+
+<img width="1030" height="116" alt="image" src="https://github.com/user-attachments/assets/e468617d-6887-4895-ad8d-d56b9a2e8355" />
+
+
+ 
 
 ## RESULT:
-Thus the program has been executed by using unified memory. It is observed that removing memset function has given more 0.007226 time.
+Thus the program has been executed by using unified memory. It is observed that removing memset function has given less/more_______________time.
